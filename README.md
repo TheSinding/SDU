@@ -1,4 +1,6 @@
-# My SDU stuff.
+# Simon Sinding
+## SDU Repo
+---
 ### Contains
 * Books
 * Code
@@ -7,5 +9,7 @@
 * Notes
 * Other
 
-## Simon Sinding
+## Simon Sinding 
 ### Ren Remoulade Software - 2016
+
+##### License MIT
