@@ -1,9 +1,11 @@
 # My SDU stuff.
 ### Contains
 * Books
-* Previous code
+* Code
+* Various Exercises
 * Old test files
 * Notes
 * Other
 
-Simon Sinding
+## Simon Sinding
+### Ren Remoulade Software - 2016
