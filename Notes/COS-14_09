@@ -1,0 +1,99 @@
+1.1 Questions.
+Q1 - 011 or 101
+Q2 - When bottom pin of the flip-flop is 1, then the through the NOT  gate it becomes a 0 and the AND gate becomes a 0 because it needs both inputs to be a 1, the OR gate is 0 because there is no 1 going to any of its inputs.
+Q5 - Binary to HEX
+0110 1010 1111 0010 -> 6AF2
+1110 1000 0101 0101 0001 0111 -> E85517
+0100 1000 -> 48
+Q6 - HEX to BIN
+5FD97 -> 0101 1111 1101 1001 0111
+610A -> 0110 0001 0000 1010 
+ABCD -> 1010 1011 1100 1101
+0100 -> 0000 0001 0000 0000
+
+1.2 Questions.
+Q1 - One would reading from a cell then writing it back to another cell. You'll have to read from Cell 5 to write it back to Cell 6. The other would just be writing.
+Q2 - What is wrong with the steps ? 
+You can move the content of cell 2 into the cell 3 fine, but now you shifted the bits from cell 2 into the cell 3 which means cell 2 now is 0000 0000 
+and cell 3 is what ever there was in cell 2 and cell 3, and now if you shift the content of cell 3 back into cell 2, you would have cell 3 0000 0000.
+You would correctly shift the content of cell 2 into an empty temp cell -> move the content of cell 3 into cell 2 -> move the content from the temp cell into cell 3. Then you'll have it interchanged.
+Q3 - 4KB = 4096 bytes * 8 = 32768 bits
+
+1.5 Questions.
+Q1 - BIN to ASCII
+01000011 - C 01101111 - o 01101101 - m 01110000 - p 01110101 - u 01110100 - t 01100101 - e
+01110010 - r 00100000 - ' '  01010011 - S 01100011 - c 01101001 - i 01100101 - e 01101110 - n
+01100011 - c 01100101 - e
+
+Q2 - All capital ASCII chars begins with 010xxxxx and the lower case is 011xxxxx
+
+Q3 - ASCII to BIN
+"Stop" Charly shouted. 
+00100010 01010011 01110100 01101111 01110000 00100001 00100010 00100000 01000011 01101000 01100101 01110010 01111001 01101100 00100000 01110011 01101000 01101111 01110101 01110100 01100101 01100100 00101110 
+
+Does 2 + 3 = 5? 
+01000100 01101111 01100101 01110011 00100000 00110010 00100000 00101011 00100000 00110011 00100000 00111101 00100000 00110101 00111111 
+
+Q4 - I do not understand this question AT ALL!
+
+Q5 - BIN to DEC 
+0101 -> 5
+1001 -> 9
+1011 -> 11
+0110 -> 6
+10000 -> 16
+10010 -> 18
+
+Q6 - DEC to BIN
+6 -> 0110
+13 -> 1101
+11 -> 1011
+18 -> 10010
+27 -> 11011
+4 -> 0100
+
+Q7 - What is the largest numeric value that could be represented with three
+bytes if each digit were encoded using one ASCII pattern per byte? 
+999
+What if binary notation were used?
+2^24 = 16,777,215
+
+Q8 - Dotted notation 
+00001111 00001111 -> 17.17
+00110011 00000000 10000000 51.0.128
+
+Q9 - 
+What is an advantage of representing images via geometric structures as
+opposed to bit maps? Scaling is better
+What about bit map techniques as opposed to geo-
+metric structures? Screens work in bitmap form
+
+1.5.2 questions
+Q1 - 
+BIN to DEC
+101010 -> 42, 100001 -> 33, 10111 -> 23, 0110 -> 6, 11111 -> 31
+
+Q2 - DEC to BUN
+32 -> 100000, 64 -> 1000000, 96 -> 1100000, 15 -> 1111, 27 -> 11011.
+
+Q3 - BIN to DEC
+11.01 -> 3.25, 101.111 -> 5.87, 10.1 -> 2.5, 110.011 -> 6.37, 0.101 -> 0.62
+
+Q4 - DEC to BIN
+4.5 -> 100.1, 2.75 -> 10.11, 1.12 -> 1.001, 0.3125 -> 0.01010, 101.101
+
+Q5 - ADDING 
+11011 + 1100 = 100111, 
+1010.001 + 1.101 = 1011.110, 
+11111 + 0001 = 100000,
+111.11 + 00.01 = 1000.000
+
+1.6 Questions
+Q1
+00011 -> 3
+01111 -> 15
+11100 -> 28
+11010 -> 
+
+Nu er det slut
+
