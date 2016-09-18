@@ -22,38 +22,43 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package initials;
+package counterextra;
 
-
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
  * @author thesinding
  */
-public class Initials {
+public class CounterExtra {
+
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
-        String[] text = new String[9]; // Define a String array
-        text[0] = "0111110000111110";    
-        text[1] = "1100011001100011";
-        text[2] = "1000001001000001";
-        text[3] = "1100000001100000";
-        text[4] = "0110000000110000";
-        text[5] = "0011110000011110";
-        text[6] = "1000011001000011";
-        text[7] = "1100011001100011";
-        text[8] = "0111110000111110";
-
-        for(int y = 0; y < text.length; y++){ // Run for the count of the String array
-            for(int x = 0; x < text[y].length(); x++){  // Run for the count of the characters in array key
-                int temp = Character.getNumericValue(text[y].charAt(x)); // Temporaly save the numeric value of the charaters
-                if(temp == 1){
-                    System.out.print('*'); // Print * if its 
-                } else {
-                    System.out.print(' ');
-                }
-
+        int value = 50;
+        for(int i = 0; i < value;){
+            if((value % 2) == 0){
+                System.out.print(value + " is an even number");
+            } else {
+                System.out.print(value + " is an uneven number" );
             }
-            System.out.print('\n');
+            if((value % 3) == 0){
+                System.out.print(" and it's also dividable with 3");
+            } 
+            System.out.print("\n\n");
+            value--;
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(CounterExtra.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        if(value <= 0){
+            System.out.println("-----------------------------------------");
+            System.out.println("And that was a little counting exercise..");
+            System.out.println("\n");
         }
     }
     
