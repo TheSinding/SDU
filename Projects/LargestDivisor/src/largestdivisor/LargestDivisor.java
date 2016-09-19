@@ -32,34 +32,31 @@ public class LargestDivisor {
     
     
     public static void main(String[] args) {
-        int high, sameY, count;    // Creating the high counter, and Y counter for the array
-                               // the divided number
-        int div[], same[][];  //creating the array to Store the numbers of corresponding divsors
-                              // And creating the array for storing numbers with divisors
-        div = new int[10000];   // make it 10000 long
-        
-        same = new int[10000][20]; // Give it 100 spots in x, 10 in y.
+        int high, sameY, count; // Creating the high counter, and Y counter for the array
+                                // the divided number
+        int same[][];  //creating the array to Store the numbers of corresponding divsors
+                       // And creating the array for storing numbers with divisors        
+        same = new int[100][20]; // Give it 100 spots in x, 10 in y.
         
         boolean higher = false; // Higher is used as a flag when a higher
                                 // divisor number then the old is reached
         
-        high = 0; // Set high number to 0
-        sameY = 0; // Set Y number to 0
+        high = 0;   // Set high number to 0
+        sameY = 0;  // Set Y number to 0
         count = 0;
         for(int i = 0; i < 10000; i++){ // Starts at 1, becuase cant divide with 0.
             for(int x = 1; x <= i; x++){
                 if(i % x == 0){
                     count++; // If it has a divisor, add 1 to the array
-                    //System.out.printf("X %s, I %s, Count %s \n", x, i, count);
                 }
             }
             if(count > high){ // Check if there is more divisors than previous number
                 high = count; // Store the number
-                              //high++; // too lazy to know why id 
                 higher = true; // Set higher flag to true.
-            } else if(count == high || higher){ // Check if the nunmber of divisors is the same, or there was a higher number
+            }
+            if(count == high && high > 0|| higher){ // Check if the nunmber of divisors is the same, or there was a higher number
                 if(higher){
-                    sameY = 0; // if it was higher, set y to 0
+                    sameY = 0;      // if it was higher, set y to 0
                     higher = false; // set higher to false
                 }
                 same[high][sameY] = i; // store the number
@@ -67,20 +64,24 @@ public class LargestDivisor {
             }
             count = 0;
         }
-        for(int i = 0; i < same.length; i++){ // Now count the stored numbers
-            if(same[i][0] > 0){ // if the first entry is higher the 0.
+        for(int i = 0; i < same.length; i++){   // Now count the stored numbers
+            if(same[i][0] > 0){                 // if the first entry is higher the 0.
                 System.out.printf("The numbers "); // print 
                 for(int x = 0; x < same[i].length; x++){ 
-                    if(same[i][x] > 0){// if the number is higher
+                    if(same[i][x] > 0){ // if the number is higher than 0
                     // This is only to make sure it doesnt print 0's
                         System.out.printf("%s, ", same[i][x]);
                     }
                 }
-                System.out.printf("all has %s divisors ", i);
+                System.out.printf("all has %s divisors ", i); // Print i
                 System.out.println();
+                
            } 
            
         }
+        System.out.println();
+        System.out.println("---------------------------------------------------------");
+        System.out.println("This was a Ren Remoulade Productions \nK, thxxx byyyyyyye.. ");
     }
     
 }
