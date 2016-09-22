@@ -44,7 +44,7 @@ public class LargestDivisor {
         high = 0;   // Set high number to 0
         sameY = 0;  // Set Y number to 0
         count = 0;
-        for(int i = 0; i < 10000; i++){ // Starts at 1, becuase cant divide with 0.
+        for(int i = 1; i < 10000; i++){ // Starts at 1, becuase cant divide with 0.
             for(int x = 1; x <= i; x++){
                 if(i % x == 0){
                     count++; // If it has a divisor, add 1 to the array
@@ -73,7 +73,7 @@ public class LargestDivisor {
                         System.out.printf("%s, ", same[i][x]);
                     }
                 }
-                System.out.printf("all has %s divisors ", i); // Print i
+                System.out.printf("all has %s divisors", i); // Print i
                 System.out.println();
                 
            } 
