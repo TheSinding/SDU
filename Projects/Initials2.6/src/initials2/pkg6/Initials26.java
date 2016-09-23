@@ -38,7 +38,6 @@ public class Initials26 {
      */
     public static void main(String[] args) {
         String  decision, input; // Decision and input placeholders
-        String[] name = new String[2]; // Make a name array holder
         Scanner sc = new Scanner(System.in); // Create scanner input
         
         int decider = (int)(Math.random() * 100); // Random decider
@@ -54,9 +53,9 @@ public class Initials26 {
         
         System.out.println("Enter you name, and I'll tell you if it's a good name:"); // Text
         System.out.print("> "); // Text
-        input = sc.nextLine(); // reads the name into input
+        input = sc.nextLine(); // reads the name into input        
         
-        name = input.split(" "); // Splits input by the space into two parts
+        String[] name = input.split(" "); // Splits input by the space into two parts
         
         // Just a WAAAAAY too long printf statement
         System.out.printf("Hello, %s %s\n"
@@ -64,7 +63,6 @@ public class Initials26 {
                 + "%s is %s chars long\n"
                 + "Your initials is %s%s\n\n"
                 + "The verdict?: %s\n\n", name[0], name[1], name[0], name[0].length(), name[1], name[1].length(), name[0].charAt(0), name[1].charAt(0), decision);
-        
     }
     
 }
