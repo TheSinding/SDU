@@ -26,6 +26,7 @@ package initials2.pkg6;
 
 import java.util.Scanner;
 
+
 /**
  *
  * @author thesinding

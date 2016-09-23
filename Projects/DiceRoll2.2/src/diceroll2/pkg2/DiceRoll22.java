@@ -34,9 +34,9 @@ public class DiceRoll22 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int dice1 = 0, dice2 = 0;
-        dice1 = (int)(Math.random()*6);
-        dice2 = (int)(Math.random()*6);
+        int dice1, dice2;
+        dice1 = (int)(Math.random()*6)+1;
+        dice2 = (int)(Math.random()*6)+1;
         System.out.printf("First roll was a %s \nSecond roll was a %s \nTotal is %s \n", dice1, dice2, dice1 + dice2);
     }
     
