@@ -1,0 +1,16 @@
+Fordelen ved at bruge et interface mellem GUI og sin "backend", er at man har et unified sæt af metoder man 
+kan bruge. GUI'et kan bruge disse få metoder, på alle objects, der ligesom implementere WareHouse. 
+GUI laget er bare ligeglad hvordan de forskellige WareHouse implementeringer, er blevet implementeret. 
+Hele idéen er at verdenen udenfor ikke har brug for at vide, hvordan de forskellige metoder er blevet skrevet.
+Dette gør det mere inturitivt at arbejde med, for dem der skal arbejde med vores kode.
+Man definiere de metoder der skal implementeringen, ved at skrive den i interfacet.
+Alle interfaces kan også bruges som datatyper (Du kan dog ikke instanciate et interface), på denne måde
+myClass{
+	Interface i = new InterfaceImplementation();
+	void calc(Interface i1, Interface i2){
+		return i1 + i2
+	}
+}
+Her er compareable et rigtigt godt exemple, på hvordan man kan bruge et interface. Alle classes der benytter sig af compareable, kan compares til hinanden. 
+Men der giver selvfølgelig ikke mening at compare en bil til en sky fx. så derfor kan man lave compare lists
+compareable<sky> denne måde sørge man for at det er kun "skyer" at man kan compare til hinanden.

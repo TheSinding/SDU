@@ -1,0 +1,350 @@
+      <Tab text="Case">
+         <content>
+            <HBox minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox prefWidth="200.0" spacing="30.0">
+                                 <children>
+                                    <JFXTextField fx:id="caseSearchField" HBox.hgrow="ALWAYS" />
+                                    <JFXButton fx:id="caseTableSearchBtn" onAction="#handleSearchBtn" text="Search" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                              </HBox>
+                              <TableView fx:id="caseTable" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                              <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                                 <children>
+                                    <JFXButton mnemonicParsing="false" onAction="#handleAddBtn" style="-fx-background-color: #8BC34A;" text="Add" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton mnemonicParsing="false" onAction="#handleDeleteBtn" style="-fx-background-color: #9E9E9E;" text="Delete" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="caseNameField" labelFloat="true" promptText="Name" />
+                                    <JFXTextField fx:id="casePriceField" labelFloat="true" promptText="Price" />
+                                    <JFXComboBox  fx:id="caseComboBox" labelFloat="true" promptText="Form Factor" />
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </content>
+      </Tab>
+      <Tab text="Ram">
+         <content>
+            <HBox minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox prefWidth="200.0" spacing="30.0">
+                                 <children>
+                                    <JFXTextField fx:id="ramSearchField" HBox.hgrow="ALWAYS" />
+                                    <JFXButton fx:id="ramTableSearchBtn" onAction="#handleSearchBtn" text="Search" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                              </HBox>
+                              <TableView fx:id="ramTable" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                              <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                                 <children>
+                                    <JFXButton mnemonicParsing="false" onAction="#handleAddBtn" style="-fx-background-color: #8BC34A;" text="Add" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton mnemonicParsing="false" onAction="#handleDeleteBtn" style="-fx-background-color: #9E9E9E;" text="Delete" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="ramNameField" labelFloat="true" promptText="Name" />
+                                    <JFXTextField fx:id="ramPriceField" labelFloat="true" promptText="Price" />
+                                    <JFXTextField fx:id="ramBusspeedField" labelFloat="true" promptText="Bus Speed" />
+                                    <JFXComboBox fx:id="ramComboBox" labelFloat="true" promptText="Ram type" />
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </content>
+      </Tab>
+      <Tab text="Motherboard">
+         <content>
+            <HBox minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox prefWidth="200.0" spacing="30.0">
+                                 <children>
+                                    <JFXTextField fx:id="motherboardSearchField" HBox.hgrow="ALWAYS" />
+                                    <JFXButton fx:id="motherboardTableSearchBtn" onAction="#handleSearchBtn" text="Search" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                              </HBox>
+                              <TableView fx:id="motherboardTable" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                              <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                                 <children>
+                                    <JFXButton mnemonicParsing="false" onAction="#handleAddBtn" style="-fx-background-color: #8BC34A;" text="Add" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton mnemonicParsing="false" onAction="#handleDeleteBtn" style="-fx-background-color: #9E9E9E;" text="Delete" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="motherboardNameField" labelFloat="true" promptText="Name" />
+                                    <JFXTextField fx:id="motherboardPriceField" labelFloat="true" promptText="Price" />
+                                    <JFXTextField fx:id="motherboardBusspeedField" labelFloat="true" promptText="Bus Speed" />
+                                    <JFXTextField fx:id="motherboardSocketField" labelFloat="true" layoutX="533.0" layoutY="30.0" promptText="Socket" />
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </content>
+      </Tab>
+      <Tab text="Graphics Cards">
+         <content>
+            <HBox minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS" >
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox prefWidth="200.0" spacing="30.0">
+                                 <children>
+                                    <JFXTextField fx:id="gfxSearchField" HBox.hgrow="ALWAYS" />
+                                    <JFXButton fx:id="gfxTableSearchBtn" onAction="#handleSearchBtn" text="Search" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                              </HBox>
+                              <TableView fx:id="gfxTable" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                              <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                                 <children>
+                                    <JFXButton mnemonicParsing="false" onAction="#handleAddBtn" style="-fx-background-color: #8BC34A;" text="Add" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton mnemonicParsing="false" onAction="#handleDeleteBtn" style="-fx-background-color: #9E9E9E;" text="Delete" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="gfxNameField" labelFloat="true" promptText="Name" />
+                                    <JFXTextField fx:id="gfxPriceField" labelFloat="true" promptText="Price" />
+                                    <JFXTextField fx:id="gfxBusspeedField" labelFloat="true" promptText="Bus Speed" />
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </content>
+      </Tab>
+      <Tab text="Refill">
+         <content>
+            <HBox minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox prefWidth="200.0" spacing="30.0">
+                                 <children>
+                                    <JFXTextField fx:id="searchField1" HBox.hgrow="ALWAYS" />
+                                    <JFXButton fx:id="tableSearchBtn111111" onAction="#handleSearchBtn" text="Search" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                              </HBox>
+                              <TableView fx:id="table111111" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                              <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                                 <children>
+                                    <JFXButton mnemonicParsing="false" onAction="#handleAddBtn" style="-fx-background-color: #8BC34A;" text="Add" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton mnemonicParsing="false" onAction="#handleDeleteBtn" style="-fx-background-color: #9E9E9E;" text="Delete" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="nameField111111" labelFloat="true" promptText="Name" />
+                                    <JFXTextField fx:id="priceField111111" labelFloat="true" promptText="Price" />
+                                    <JFXTextField fx:id="busspeedField111111" labelFloat="true" promptText="Bus Speed" />
+                                    <JFXTextField fx:id="socketField111111" labelFloat="true" layoutX="533.0" layoutY="30.0" promptText="Socket" />
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </content>
+      </Tab>
+      <Tab text="Basket">
+         <content>
+            <HBox minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox prefWidth="200.0" spacing="30.0">
+                                 <children>
+                                    <JFXTextField fx:id="searchField1111111" HBox.hgrow="ALWAYS" />
+                                    <JFXButton fx:id="tableSearchBtn1111111" onAction="#handleSearchBtn" text="Search" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                              </HBox>
+                              <TableView fx:id="table1111111" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                              <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                                 <children>
+                                    <JFXButton mnemonicParsing="false" onAction="#handleAddBtn" style="-fx-background-color: #8BC34A;" text="Add" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton mnemonicParsing="false" onAction="#handleDeleteBtn" style="-fx-background-color: #9E9E9E;" text="Delete" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="nameField1111111" labelFloat="true" promptText="Name" />
+                                    <JFXTextField fx:id="priceField1111111" labelFloat="true" promptText="Price" />
+                                    <JFXTextField fx:id="busspeedField1111111" labelFloat="true" promptText="Bus Speed" />
+                                    <JFXTextField fx:id="socketField1111111" labelFloat="true" layoutX="533.0" layoutY="30.0" promptText="Socket" />
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </content>
+      </Tab>
+      <Tab text="Computer Systems">
+         <content>
+            <HBox minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox prefWidth="200.0" spacing="30.0">
+                                 <children>
+                                    <JFXTextField fx:id="searchField11111111" HBox.hgrow="ALWAYS" />
+                                    <JFXButton fx:id="tableSearchBtn11111111" onAction="#handleSearchBtn" text="Search" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                              </HBox>
+                              <TableView fx:id="table11111111" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                              <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                                 <children>
+                                    <JFXButton mnemonicParsing="false" onAction="#handleAddBtn" style="-fx-background-color: #8BC34A;" text="Add" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton mnemonicParsing="false" onAction="#handleDeleteBtn" style="-fx-background-color: #9E9E9E;" text="Delete" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="nameField11111111" labelFloat="true" promptText="Name" />
+                                    <JFXTextField fx:id="priceField11111111" labelFloat="true" promptText="Price" />
+                                    <JFXTextField fx:id="busspeedField11111111" labelFloat="true" promptText="Bus Speed" />
+                                    <JFXTextField fx:id="socketField11111111" labelFloat="true" layoutX="533.0" layoutY="30.0" promptText="Socket" />
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </content>
+      </Tab>
+   </tabs>
+
